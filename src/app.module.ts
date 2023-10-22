@@ -22,7 +22,7 @@ import { ConfigModule } from '@nestjs/config';
       database: process.env.MYSQL_DATABASE,
       autoLoadEntities: true,
       synchronize: true,
-      ssl: process.env.MYSQL_SSL === "true",
+      /* ssl: process.env.MYSQL_SSL === "true",
       extra: {
         ssl:
           process.env.MYSQL_SSL === "true"
@@ -30,7 +30,7 @@ import { ConfigModule } from '@nestjs/config';
                 rejectUnauthorized: false,
               }
             : null,
-      },
+      }, */
     }),
     ProductosModule,
     MarcasModule,
